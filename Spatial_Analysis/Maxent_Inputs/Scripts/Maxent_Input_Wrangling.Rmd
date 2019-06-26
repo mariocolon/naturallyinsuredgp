@@ -1,0 +1,351 @@
+---
+title: "Maxent_Input_Wrangling"
+output: html_document
+---
+
+**This script cleans all environmental layers for the three time periods (2005-2015, 2040-2050, 2070-2080) for use in Maxent through cropping, resampling, and exporting as ASCII files**
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r load_packages, message=FALSE}
+
+library(raster)
+library(tidyverse)
+library(dplyr)
+library(here)
+library(ascii)
+library(maptools)
+#library(sf)
+library(fasterize)
+library(rgdal)
+library(ncdf4)
+library(rgeos)
+library(maptools)
+library(tmap)
+
+```
+
+###read in data
+```{r}
+
+#PRESENT
+pH_present <- raster ("G:/Coral_Suitability/Maxent/Maxent_Inputs/Present_ObservationData/pH_GMEDcurrent.tif")
+par_present <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/Present_ObservationData/PAR_Present_Bio.tif")
+salinity_present <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/Present_ObservationData/Salinity_Present_Bio.tif")
+SST_present <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/Present_ObservationData/SST_Present_Bio.tif")
+currentspeed_present <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/Present_ObservationData/UVEL_Present_Bio.tif")
+
+##### RCP 4.5 #####
+
+#NEARFUTURE4.5 (2040-2050)
+pH_near45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2050/ph_near45.asc")
+par_near45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2050/par_near45.asc")
+salinity_near45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2050/salinity_near45.asc")
+SST_near45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2050/sst_near45.asc")
+currentspeed_near45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2050/speed_near45.asc")
+
+
+#FUTURE4.5 (2070-2080)
+pH_future45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2080/ph_far45.asc")
+par_future45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2080/par_far45.asc")
+salinity_future45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2080/salinity_far45.asc")
+SST_future45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2080/sst_far45.asc")
+currentspeed_future45 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP4_5/2080/speed_far45.asc")
+
+##### RCP 8.5 #####
+
+#NEARFUTURE8.5 (2040-2050)
+pH_near85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2050/ph_nearfuture.asc")
+par_near85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2050/par_nearfuture.asc")
+salinity_near85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2050/salinity_nearfuture.asc")
+SST_near85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2050/sst_nearfuture.asc")
+currentspeed_near85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2050/speed_nearfuture.asc")
+
+
+#FUTURE8.5 (2070-2080)
+pH_future85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2080/ph_future85.asc")
+par_future85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2080/par_future85.asc")
+salinity_future85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2080/salinity_future85.asc")
+SST_future85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2080/sst_future85.asc")
+currentspeed_future85 <- raster("G:/Coral_Suitability/Maxent/Maxent_Inputs/ASCII_Downscaled_Files/RCP8_5/2080/speed_future85.asc")
+
+
+```
+
+###set Caribbean extent
+```{r set_extent}
+
+Caribbean_extent <- as(extent(-103, -50, 4, 30), 'SpatialPolygons')
+
+```
+
+
+###crop present, nearfuture, and future pH rasters
+```{r}
+
+#PRESENT
+pH_present <- crop(pH_present, Caribbean_extent)
+plot(pH_present)
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+pH_near45 <- crop(pH_near45, Caribbean_extent)
+plot(pH_near45)
+
+#FUTURE
+pH_future45 <- crop(pH_future45, Caribbean_extent)
+plot(pH_future45)
+
+##### RCP 8.5 #####
+
+
+#NEAR FUTURE
+pH_near85 <- crop(pH_near85, Caribbean_extent)
+plot(pH_near85)
+
+#FUTURE
+pH_future85 <- crop(pH_future85, Caribbean_extent)
+plot(pH_future85)
+
+summary(pH_present)
+summary(pH_near45)
+summary(pH_future45)
+summary(pH_near85)
+summary(pH_future85)
+
+```
+
+###crop present, nearfuture, and future SST rasters
+```{r}
+
+#PRESENT
+SST_present <- crop(SST_present, Caribbean_extent)
+plot(SST_present)
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+SST_near45 <- crop(SST_near45, Caribbean_extent)
+plot(SST_near45)
+
+#FUTURE
+SST_future45 <- crop(SST_future45, Caribbean_extent)
+plot(SST_future45)
+
+##### RCP 8.5 #####
+
+#NEAR FUTURE
+SST_near85 <- crop(SST_near85, Caribbean_extent)
+plot(SST_near85)
+
+#FUTURE
+SST_future85 <- crop(SST_future85, Caribbean_extent)
+plot(SST_future85)
+
+summary(SST_present)
+summary(SST_near45)
+summary(SST_future45)
+summary(SST_near85)
+summary(SST_future85)
+
+```
+
+###crop present, nearfuture, and future PAR rasters
+```{r}
+
+#PRESENT
+par_present <- crop(par_present, Caribbean_extent)
+plot(par_present)
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+par_near45 <- crop(par_near45, Caribbean_extent)
+plot(par_near45)
+
+#FUTURE
+par_future45 <- crop(par_future45, Caribbean_extent)
+plot(par_future45)
+
+##### RCP 8.5 #####
+
+#NEAR FUTURE
+par_near85 <- crop(par_near85, Caribbean_extent)
+plot(par_near85)
+
+#FUTURE
+par_future85 <- crop(par_future85, Caribbean_extent)
+plot(par_future85)
+
+summary(par_present)
+summary(par_near45)
+summary(par_future45)
+summary(par_near85)
+summary(par_future85)
+
+```
+
+###crop present, nearfuture, and future salinity rasters
+```{r}
+
+#PRESENT
+salinity_present <- crop(salinity_present, Caribbean_extent)
+plot(salinity_present)
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+salinity_near45 <- crop(salinity_near45, Caribbean_extent)
+plot(salinity_near45)
+
+#FUTURE
+salinity_future45 <- crop(salinity_future45, Caribbean_extent)
+plot(salinity_future45)
+
+##### RCP 8.5 #####
+
+#NEAR FUTURE
+salinity_near85 <- crop(salinity_near85, Caribbean_extent)
+plot(salinity_near85)
+
+#FUTURE
+salinity_future85 <- crop(salinity_future85, Caribbean_extent)
+plot(salinity_future85)
+
+summary(salinity_present)
+summary(salinity_near45)
+summary(salinity_future45)
+summary(salinity_near85)
+summary(salinity_future85)
+
+```
+
+###crop present, nearfuture, and future current speed rasters
+```{r}
+
+#PRESENT
+currentspeed_present <- crop(currentspeed_present, Caribbean_extent)
+plot(currentspeed_present)
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+currentspeed_near45 <- crop(currentspeed_near45, Caribbean_extent)
+plot(currentspeed_near45)
+
+#FUTURE
+currentspeed_future45 <- crop(currentspeed_future45, Caribbean_extent)
+plot(currentspeed_future45)
+
+##### RCP 8.5 #####
+
+currentspeed_near85 <- crop(currentspeed_near85, Caribbean_extent)
+plot(currentspeed_near85)
+
+#FUTURE
+currentspeed_future85 <- crop(currentspeed_future85, Caribbean_extent)
+plot(currentspeed_future85)
+
+summary(currentspeed_present)
+summary(currentspeed_near45)
+summary(currentspeed_near85)
+summary(currentspeed_future45)
+summary(currentspeed_future85)
+
+
+```
+
+###resample Caribbean data for Maxent
+```{r resample_files}
+
+#PRESENT
+SST_present_resample <- resample(SST_present, pH_present)
+pH_present_resample <- resample(pH_present, pH_present)
+salinity_present_resample <- resample(salinity_present, pH_present)
+currentspeed_present_resample <- resample(currentspeed_present, pH_present)
+par_present_resample <- resample(par_present, pH_present)
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+SST_near45_resample <- resample(SST_near45, pH_present)
+salinity_near45_resample <- resample(salinity_near45, pH_present)
+currentspeed_near45_resample <- resample(currentspeed_near45, pH_present)
+par_near45_resample <- resample(par_near45, pH_present)
+pH_near45_resample <- resample(pH_near45, pH_present)
+
+#FUTURE
+SST_future45_resample <- resample(SST_future45, pH_present)
+salinity_future45_resample <- resample(salinity_future45, pH_present)
+currentspeed_future45_resample <- resample(currentspeed_future45, pH_present)
+par_future45_resample <- resample(par_future45, pH_present)
+pH_future45_resample <- resample(pH_future45, pH_present)
+
+##### RCP 8.5 #####
+
+#NEAR FUTURE
+SST_near85_resample <- resample(SST_near85, pH_present)
+salinity_near85_resample <- resample(salinity_near85, pH_present)
+currentspeed_near85_resample <- resample(currentspeed_near85, pH_present)
+par_near85_resample <- resample(par_near85, pH_present)
+pH_near85_resample <- resample(pH_near85, pH_present)
+
+#FUTURE
+SST_future85_resample <- resample(SST_future85, pH_present)
+salinity_future85_resample <- resample(salinity_future85, pH_present)
+currentspeed_future85_resample <- resample(currentspeed_future85, pH_present)
+par_future85_resample <- resample(par_future85, pH_present)
+pH_future85_resample <- resample(pH_future85, pH_present)
+
+```
+
+###export data as ASCII files for Maxent
+```{r export_data}
+
+#PRESENT
+writeRaster(pH_present_resample, filename = "pH_present.asc")
+writeRaster(SST_present_resample, filename = "SST_present.asc")
+writeRaster(salinity_present_resample, filename = "salinity_present.asc")
+writeRaster(currentspeed_present_resample, filename = "currentspeed_present.asc")
+writeRaster(par_present_resample, filename = "PAR_present.asc")
+
+##### RCP 4.5 #####
+
+#NEAR FUTURE
+writeRaster(SST_near45_resample, filename = "sst_near45.asc")
+writeRaster(salinity_near45_resample, filename = "salinity_near45.asc")
+writeRaster(currentspeed_near45_resample, filename = "currentspeed_near45.asc")
+writeRaster(par_near45_resample, filename = "PAR_near45.asc")
+writeRaster(pH_near45_resample, filename = "pH_near45.asc")
+
+#FUTURE
+writeRaster(SST_future45_resample, filename = "SST_future45.asc")
+writeRaster(salinity_future45_resample, filename = "salinity_future45.asc")
+writeRaster(currentspeed_future45_resample, filename = "currentspeed_future45.asc")
+writeRaster(par_future45_resample, filename = "PAR_future45.asc")
+writeRaster(pH_future45_resample, filename = "pH_future45.asc")
+
+##### RCP 8.5 #####
+
+#NEAR FUTURE
+writeRaster(SST_near85_resample, filename = "sst_near85.asc")
+writeRaster(salinity_near85_resample, filename = "salinity_near85.asc")
+writeRaster(currentspeed_near85_resample, filename = "currentspeed_near85.asc")
+writeRaster(par_near85_resample, filename = "PAR_near85.asc")
+writeRaster(pH_near85_resample, filename = "pH_near85.asc")
+
+#FUTURE
+writeRaster(SST_future85_resample, filename = "SST_future85.asc")
+writeRaster(salinity_future85_resample, filename = "salinity_future85.asc")
+writeRaster(currentspeed_future85_resample, filename = "currentspeed_future85.asc")
+writeRaster(par_future85_resample, filename = "PAR_future85.asc")
+writeRaster(pH_future85_resample, filename = "pH_future85.asc")
+
+```
+
+
+

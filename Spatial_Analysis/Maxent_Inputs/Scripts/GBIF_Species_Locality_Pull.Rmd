@@ -1,0 +1,88 @@
+---
+title: "GBIF Species Locality Pull"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "G:/Coral_Suitability/Maxent/Maxent_Inputs/CoralFamilies")
+```
+
+```{r}
+
+#https://github.com/azizka/Using_biodiversity_data_for_biogeography/wiki/01_Downloading-geographic-occurrence-data-from-GBIF
+
+#https://poldham.github.io/abs/gbif.html
+
+#https://tutorials.ecodiv.earth/toc/grass-r-gbif.html
+
+install.packages("rgbif")
+install.packages("rgrass7")
+install.packages("spgrass6")
+install.packages("mapr")
+library(rgbif)
+library(tidyverse)
+library(maptools)
+library(spgrass6)
+library(rgrass7)
+library(raster)
+library(sp)
+library(mapr)
+
+
+
+#Define Caribbean Extent
+
+Caribbean <- c(-100, -50, 1, 40)
+
+
+###################RUN MULTIPLE FAMILIES################################
+
+#Acroporidae
+Acroporidae <- name_suggest(q = "Acroporidae", rank = "family")
+Acroporidae$key
+
+Acroporidae.rec <- occ_search(taxonKey = 8153, return = "data", limit = 1000000, hasCoordinate = T, geometry = Caribbean, hasGeospatialIssue=FALSE)
+
+var <- c("name","decimalLatitude","decimalLongitude")
+Acroporidae.rec <- Acroporidae.rec[var]
+
+write.csv(Acroporidae.rec, file = "Acroporidae.rec.csv")
+
+#Montastraeidae
+Montastraeidae <- name_suggest(q = "Montastraeidae", rank = "family")
+Montastraeidae$key
+
+Montastraeidae.rec <- occ_search(taxonKey = 8392047, return = "data", limit = 10000, hasCoordinate = T, geometry = Caribbean, year='2000,2019', hasGeospatialIssue=FALSE)
+
+Montastraeidae.rec <- Montastraeidae.rec[var]
+
+write.csv(Montastraeidae.rec, file = "Montastraeidae.rec.csv")
+
+
+
+#Merulinidae
+Merulinidae <- name_suggest(q = "Merulinidae", rank = "family")
+Merulinidae$key
+
+Merulinidae.rec <- occ_search(taxonKey = 8219, return = "data", limit = 1000000, hasCoordinate = T, geometry = Caribbean, hasGeospatialIssue=FALSE)
+Merulinidae.rec <- Merulinidae.rec[var]
+
+write.csv(Merulinidae.rec, file = "Merulinidae.rec.csv")
+
+
+#Poritidae
+Poritidae <- name_suggest(q = "Poritidae", rank = "family")
+Poritidae$key
+
+Poritidae.rec <- occ_search(taxonKey = 9241, return = "data", limit = 1000000, hasCoordinate = T, geometry = Caribbean, hasGeospatialIssue=FALSE)
+
+Poritidae.rec <- Poritidae.rec[var]
+
+write.csv(Poritidae.rec , file = "Poritidae.rec.csv")
+
+#Merge files
+
+
+
+```
+
