@@ -1,0 +1,410 @@
+Fri Mar 15 14:31:33 PDT 2019
+MaxEnt version 3.3.3k
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\PAR_present.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\SST_present.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\currentspeed_present.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\pH_present.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\salinity_present.asc
+Reading samples from Coral_Fam_Erased.csv
+Read samples: max memory 477626368, total allocated 257425408, free 240753800, used 16671608, increment 16671608
+Warning: interpreting Latitude column of sample file as latitude
+Converting file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\SST_present.asc size 2918182, max memory = 477626368
+Reading file SST_present.asc
+FLOAT, 157540 pixels with data
+readGrid: max memory 477626368, total allocated 257425408, free 205851544, used 51573864, increment 34902256
+Writing file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present\maxent.cache\SST_present.mxe
+Time since start: 1.221
+Extractor: max memory 477626368, total allocated 257425408, free 204830328, used 52595080, increment 1021216
+Extracting random background and sample data
+Warning: Sample at -82.449997, 27.916668 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.449997, 27.916668 which has no environmental data
+Warning: Sample at -82.456314, 27.922686 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.456314, 27.922686 which has no environmental data
+Warning: Sample at -77.65638, 24.3069 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -77.65638, 24.3069
+Warning: Sample at -77.25, 21.533333 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -77.25, 21.533333
+Warning: Sample at -86.879513, 20.861208 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.879513, 20.861208
+Warning: Sample at -86.876944, 20.839167 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.876944, 20.839167
+Warning: Sample at -86.877528, 20.823769 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.877528, 20.823769
+Warning: Sample at -86.873677, 20.843527 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.873677, 20.843527
+Warning: Sample at -86.872943, 20.836811 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.872943, 20.836811
+Warning: Sample at -86.874161, 20.84476 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.874161, 20.84476
+Warning: Sample at -86.875706, 20.842194 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.875706, 20.842194
+Warning: Sample at -86.960058, 20.741826 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.960058, 20.741826
+Warning: Sample at -86.956336, 20.741837 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -86.956336, 20.741837
+Warning: Sample at -87.120834, 20.577778 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.120834, 20.577778
+Warning: Sample at -87.1208, 20.5778 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.1208, 20.5778
+Warning: Sample at -87.219327, 20.50235 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.219327, 20.50235
+Warning: Sample at -87.299103, 20.40765 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.299103, 20.40765
+Warning: Sample at -87.297621, 20.407627 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.297621, 20.407627
+Warning: Sample at -87.298222, 20.407225 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.298222, 20.407225
+Warning: Sample at -87.297707, 20.407868 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.297707, 20.407868
+Warning: Sample at -87.297106, 20.407708 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.297106, 20.407708
+Warning: Sample at -71.37395, 19.867988 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -71.37395, 19.867988
+Warning: Sample at -71.384067, 19.879975 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -71.384067, 19.879975
+Warning: Sample at -71.393313, 19.878038 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -71.393313, 19.878038
+Warning: Sample at -71.3923, 19.880825 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -71.3923, 19.880825
+Warning: Sample at -71.388353, 19.87833 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -71.388353, 19.87833
+Warning: Sample at -96.116726, 19.211654 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.116726, 19.211654
+Warning: Sample at -96.095278, 19.180556 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.095278, 19.180556
+Warning: Sample at -96.092905, 19.180802 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.092905, 19.180802
+Warning: Sample at -96.089202, 19.177954 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.089202, 19.177954
+Warning: Sample at -96.090515, 19.173 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.090515, 19.173
+Warning: Sample at -96.09389, 19.2302 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.09389, 19.2302
+Warning: Sample at -96.092224, 19.173889 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.092224, 19.173889
+Warning: Sample at -96.093333, 19.173889 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.093333, 19.173889
+Warning: Sample at -96.096944, 19.223333 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.096944, 19.223333
+Warning: Sample at -96.082361, 19.183833 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.082361, 19.183833
+Warning: Sample at -96.094167, 19.174917 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.094167, 19.174917
+Warning: Sample at -96.126944, 19.231389 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.126944, 19.231389
+Warning: Sample at -96.094022, 19.181606 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.094022, 19.181606
+Warning: Sample at -96.088401, 19.174303 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.088401, 19.174303
+Warning: Sample at -96.095762, 19.178807 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.095762, 19.178807
+Warning: Sample at -96.095613, 19.178119 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.095613, 19.178119
+Warning: Sample at -96.08701, 19.19231 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.08701, 19.19231
+Warning: Sample at -96.11966, 19.2323 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.11966, 19.2323
+Warning: Sample at -96.121944, 19.191389 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.121944, 19.191389
+Warning: Sample at -96.090377, 19.179742 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.090377, 19.179742
+Warning: Sample at -96.11673, 19.1911 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.11673, 19.1911
+Warning: Sample at -96.0885, 19.17395 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.0885, 19.17395
+Warning: Sample at -96.10074, 19.22497 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.10074, 19.22497
+Warning: Sample at -96.123419, 19.228732 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.123419, 19.228732
+Warning: Sample at -96.092798, 19.172838 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.092798, 19.172838
+Warning: Sample at -96.09508, 19.178706 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -96.09508, 19.178706
+Warning: Sample at -87.6175, 18.913334 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -87.6175, 18.913334
+Warning: Sample at -77.101433, 18.414867 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -77.101433, 18.414867
+Warning: Sample at -77.005486, 18.415066 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -77.005486, 18.415066
+Warning: Sample at -76.983284, 18.409767 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -76.983284, 18.409767
+Warning: Sample at -76.948853, 18.411217 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -76.948853, 18.411217
+Warning: Sample at -78.164169, 18.1735 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -78.164169, 18.1735
+Warning: Sample at -61.54908, 16.32105 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -61.54908, 16.32105
+Warning: Sample at -97.06705, 15.84975 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_present)
+Warning: Skipping sample at -97.06705, 15.84975
+Warning: Sample at -97.072139, 15.853475 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_present)
+Warning: Skipping sample at -97.072139, 15.853475
+Warning: Sample at -68.82922, 11.44112 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -68.82922, 11.44112
+Warning: Sample at -64.42698, 10.28311 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -64.42698, 10.28311
+Warning: Sample at -83.066666, 10.016667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.066666, 10.016667
+Warning: Sample at -83.07, 10.02 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.07, 10.02
+Warning: Sample at -83.066666, 10.0 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.066666, 10.0
+Warning: Sample at -83.07, 10.0 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.07, 10.0
+Warning: Sample at -83.0611, 9.9844 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.0611, 9.9844
+Warning: Sample at -83.0661, 10.0158 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.0661, 10.0158
+Warning: Sample at -83.0642, 9.9881 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.0642, 9.9881
+Warning: Sample at -82.805, 9.738334 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.805, 9.738334
+Warning: Sample at -82.805336, 9.725 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.805336, 9.725
+Warning: Sample at -82.805832, 9.75 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.805832, 9.75
+Warning: Sample at -82.616669, 9.616667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.616669, 9.616667
+Warning: Sample at -79.597221, 9.61306 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -79.597221, 9.61306
+Warning: Sample at -79.5972, 9.6131 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -79.5972, 9.6131
+Warning: Sample at -82.247717, 9.205148 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.247717, 9.205148
+Warning: Sample at -82.254778, 9.281667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -82.254778, 9.281667
+Warning: Sample at -83.400002, 8.716667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_present)
+Warning: Skipping sample at -83.400002, 8.716667
+Time since start: 3.1
+156475 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves nopictures jackknife outputdirectory=G:\Coral_Suitability\Maxent\Maxent_Outputs\Output1_Present samplesfile=G:\Coral_Suitability\Maxent\Maxent_Inputs\Coral_Fam_Erased.csv environmentallayers=G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present nothreshold nohinge noautofeature
+Species: coral
+Layers: PAR_present SST_present currentspeed_present pH_present salinity_present
+Layertypes: Continuous Continuous Continuous Continuous Continuous
+responsecurves: true
+pictures: false
+jackknife: true
+outputdirectory: G:\Coral_Suitability\Maxent\Maxent_Outputs\Output1_Present
+samplesfile: G:\Coral_Suitability\Maxent\Maxent_Inputs\Coral_Fam_Erased.csv
+environmentallayers: G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\Present
+threshold: false
+hinge: false
+autofeature: false
+
+getSamples: max memory 477626368, total allocated 257425408, free 197591872, used 59833536, increment 7238456
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 195835928, used 61589480, increment 1755944
+coral: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 195103536, used 62321872, increment 732392
+linearPredictor: max memory 477626368, total allocated 257425408, free 195103536, used 62321872, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 195103536, used 62321872, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 195103536, used 62321872, increment 0
+Initial loss: 9.274253697719836
+220: time = 0.234000 loss = 9.011332
+Resulting gain: 0.26292206571016763
+Projecting...
+Time since start: 4.102
+Writing file G:\Coral_Suitability\Maxent\Maxent_Outputs\Output1_Present\coral.asc
+coral response curves
+Response curve: only PAR_present
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 232592400, used 24833008, increment -37488864
+coral PAR_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 232592400, used 24833008, increment 0
+linearPredictor: max memory 477626368, total allocated 257425408, free 232592400, used 24833008, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 232592400, used 24833008, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 232592400, used 24833008, increment 0
+Initial loss: 9.274253697719836
+Time since start: 5.165
+40: time = 0.078000 loss = 9.274219
+Resulting gain: 3.46053943864888E-5
+coral response curves
+Response curve: only SST_present
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 228228768, used 29196640, increment 4363632
+coral SST_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 228228768, used 29196640, increment 0
+linearPredictor: max memory 477626368, total allocated 257425408, free 228228768, used 29196640, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 228228768, used 29196640, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 228228768, used 29196640, increment 0
+Initial loss: 9.274253697719836
+60: time = 0.124000 loss = 9.215986
+Resulting gain: 0.05826797652643023
+coral response curves
+Response curve: only currentspeed_present
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 223680544, used 33744864, increment 4548224
+coral currentspeed_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 223680544, used 33744864, increment 0
+linearPredictor: max memory 477626368, total allocated 257425408, free 223680544, used 33744864, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 223680544, used 33744864, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 223680544, used 33744864, increment 0
+Initial loss: 9.274253697719836
+100: time = 0.141000 loss = 9.212643
+Resulting gain: 0.061610935031097824
+coral response curves
+Response curve: only pH_present
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 218779920, used 38645488, increment 4900624
+coral pH_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 218779920, used 38645488, increment 0
+linearPredictor: max memory 477626368, total allocated 257425408, free 218779920, used 38645488, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 218779920, used 38645488, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 218779920, used 38645488, increment 0
+Initial loss: 9.274253697719836
+60: time = 0.156000 loss = 9.255370
+Resulting gain: 0.018883688103363383
+coral response curves
+Response curve: only salinity_present
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 212805672, used 44619736, increment 5974248
+coral salinity_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 212805672, used 44619736, increment 0
+linearPredictor: max memory 477626368, total allocated 257425408, free 212805672, used 44619736, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 212805672, used 44619736, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 212805672, used 44619736, increment 0
+Initial loss: 9.274253697719836
+100: time = 0.187000 loss = 9.257418
+Resulting gain: 0.016836185239721857
+coral response curves
+Time since start: 6.293
+Jackknife: leave PAR_present out
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 185460632, used 71964776, increment 27345040
+coral PAR_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 184330272, used 73095136, increment 1130360
+linearPredictor: max memory 477626368, total allocated 257425408, free 184330272, used 73095136, increment 0
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 184330272, used 73095136, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 184330272, used 73095136, increment 0
+Initial loss: 9.274253697719836
+140: time = 0.156000 loss = 9.041810
+Jackknife: leave SST_present out
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 182391208, used 75034200, increment 1939064
+coral SST_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 257425408, free 182305912, used 75119496, increment 85296
+linearPredictor: max memory 477626368, total allocated 257425408, free 182220616, used 75204792, increment 85296
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 182220616, used 75204792, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 182220616, used 75204792, increment 0
+Initial loss: 9.274253697719836
+240: time = 0.219000 loss = 9.154696
+Jackknife: leave currentspeed_present out
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 241685384, used 14167160, increment -61037632
+coral currentspeed_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 241685384, used 14167160, increment 0
+linearPredictor: max memory 477626368, total allocated 255852544, free 241568352, used 14284192, increment 117032
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 241568352, used 14284192, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 241568352, used 14284192, increment 0
+Initial loss: 9.274253697719836
+140: time = 0.140000 loss = 9.050705
+Jackknife: leave pH_present out
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 239413984, used 16438560, increment 2154368
+coral pH_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 239328688, used 16523856, increment 85296
+linearPredictor: max memory 477626368, total allocated 255852544, free 239243392, used 16609152, increment 85296
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 239243392, used 16609152, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 239243392, used 16609152, increment 0
+Initial loss: 9.274253697719836
+120: time = 0.126000 loss = 9.012328
+Jackknife: leave salinity_present out
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 236760832, used 19091712, increment 2482560
+coral salinity_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 235618480, used 20234064, increment 1142352
+linearPredictor: max memory 477626368, total allocated 255852544, free 235618480, used 20234064, increment 0
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 235618480, used 20234064, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 235618480, used 20234064, increment 0
+Initial loss: 9.274253697719836
+180: time = 0.156000 loss = 9.155864
+Jackknife: only PAR_present
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 233883360, used 21969184, increment 1735120
+coral PAR_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 233883360, used 21969184, increment 0
+linearPredictor: max memory 477626368, total allocated 255852544, free 233883360, used 21969184, increment 0
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 233883360, used 21969184, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 233883360, used 21969184, increment 0
+Initial loss: 9.274253697719836
+40: time = 0.078000 loss = 9.274219
+Res.gain: 3.46053943864888E-5
+Jackknife: only SST_present
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 232355752, used 23496792, increment 1527608
+coral SST_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 231298664, used 24553880, increment 1057088
+linearPredictor: max memory 477626368, total allocated 255852544, free 231298664, used 24553880, increment 0
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 231298664, used 24553880, increment 0
+Time since start: 7.308
+Sequential: max memory 477626368, total allocated 255852544, free 231298664, used 24553880, increment 0
+Initial loss: 9.274253697719836
+60: time = 0.095000 loss = 9.215986
+Res.gain: 0.05826797652643023
+Jackknife: only currentspeed_present
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 230864928, used 24987616, increment 433736
+coral currentspeed_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 230864928, used 24987616, increment 0
+linearPredictor: max memory 477626368, total allocated 255852544, free 230864928, used 24987616, increment 0
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 230864928, used 24987616, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 230864928, used 24987616, increment 0
+Initial loss: 9.274253697719836
+100: time = 0.125000 loss = 9.212643
+Res.gain: 0.061610935031097824
+Jackknife: only pH_present
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 230214384, used 25638160, increment 650544
+coral pH_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 229912216, used 25940328, increment 302168
+linearPredictor: max memory 477626368, total allocated 255852544, free 229826920, used 26025624, increment 85296
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 229826920, used 26025624, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 229826920, used 26025624, increment 0
+Initial loss: 9.274253697719836
+60: time = 0.156000 loss = 9.255370
+Res.gain: 0.018883688103363383
+Jackknife: only salinity_present
+Making features
+makeFeatures: max memory 477626368, total allocated 255852544, free 228552928, used 27299616, increment 1273992
+coral salinity_present: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+702 samples
+Density: max memory 477626368, total allocated 255852544, free 228552928, used 27299616, increment 0
+linearPredictor: max memory 477626368, total allocated 255852544, free 228552928, used 27299616, increment 0
+FeaturedSpace: max memory 477626368, total allocated 255852544, free 228552928, used 27299616, increment 0
+Sequential: max memory 477626368, total allocated 255852544, free 228552928, used 27299616, increment 0
+Initial loss: 9.274253697719836
+100: time = 0.172000 loss = 9.257418
+Res.gain: 0.016836185239721857
+Ending
