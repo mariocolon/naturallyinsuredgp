@@ -1,0 +1,748 @@
+Fri Mar 08 17:25:01 PST 2019
+MaxEnt version 3.3.3k
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\PAR_future45.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\SST_future45.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\currentspeed_future45.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\pH_future45.asc
+Checking header of G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\salinity_future45.asc
+Reading samples from Coral_Fam_Erased.csv
+Read samples: max memory 477626368, total allocated 270008320, free 181802304, used 88206016, increment 18001584
+Warning: interpreting Latitude column of sample file as latitude
+Converting file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\PAR_future45.asc size 2901228, max memory = 477626368
+Reading file PAR_future45.asc
+FLOAT, 156150 pixels with data
+readGrid: max memory 477626368, total allocated 259522560, free 159110152, used 100412408, increment 12206392
+Writing file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\maxent.cache\PAR_future45.mxe
+Time since start: 1.626
+Converting file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\SST_future45.asc size 2898375, max memory = 477626368
+Reading file SST_future45.asc
+FLOAT, 155747 pixels with data
+readGrid: max memory 477626368, total allocated 264765440, free 155842120, used 108923320, increment 8510912
+Writing file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\maxent.cache\SST_future45.mxe
+Time since start: 2.784
+Converting file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\currentspeed_future45.asc size 2901710, max memory = 477626368
+Reading file currentspeed_future45.asc
+FLOAT, 155747 pixels with data
+readGrid: max memory 477626368, total allocated 261619712, free 215650208, used 45969504, increment -62953816
+Writing file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\maxent.cache\currentspeed_future45.mxe
+Time since start: 4.035
+Converting file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\pH_future45.asc size 2901444, max memory = 477626368
+Reading file pH_future45.asc
+FLOAT, 156153 pixels with data
+readGrid: max memory 477626368, total allocated 251658240, free 194133168, used 57525072, increment 11555568
+Writing file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\maxent.cache\pH_future45.mxe
+Time since start: 5.165
+Converting file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\salinity_future45.asc size 2898398, max memory = 477626368
+Reading file salinity_future45.asc
+FLOAT, 155747 pixels with data
+readGrid: max memory 477626368, total allocated 257425408, free 185259296, used 72166112, increment 14641040
+Writing file G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future\maxent.cache\salinity_future45.mxe
+Time since start: 6.246
+Extractor: max memory 477626368, total allocated 257425408, free 184561920, used 72863488, increment 697376
+Extracting random background and sample data
+Warning: Sample at -80.349998, 25.166668 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -80.349998, 25.166668
+Warning: Sample at -80.349998, 25.183332 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -80.349998, 25.183332
+Warning: Sample at -78.443054, 22.5625 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -78.443054, 22.5625
+Warning: Sample at -78.444443, 22.563612 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -78.444443, 22.563612
+Warning: Sample at -86.960058, 20.741826 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -86.960058, 20.741826 which has no environmental data
+Warning: Sample at -86.956336, 20.741837 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -86.956336, 20.741837 which has no environmental data
+Warning: Sample at -87.120834, 20.577778 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.120834, 20.577778 which has no environmental data
+Warning: Sample at -87.1208, 20.5778 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.1208, 20.5778 which has no environmental data
+Warning: Sample at -87.219327, 20.50235 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.219327, 20.50235 which has no environmental data
+Warning: Sample at -87.299103, 20.40765 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.299103, 20.40765 which has no environmental data
+Warning: Sample at -87.297621, 20.407627 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.297621, 20.407627 which has no environmental data
+Warning: Sample at -87.298222, 20.407225 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.298222, 20.407225 which has no environmental data
+Warning: Sample at -87.297707, 20.407868 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.297707, 20.407868 which has no environmental data
+Warning: Sample at -87.297106, 20.407708 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.297106, 20.407708 which has no environmental data
+Warning: Sample at -87.032778, 20.436944 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.032778, 20.436944
+Warning: Sample at -87.011111, 20.433333 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011111, 20.433333
+Warning: Sample at -87.009903, 20.431436 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.009903, 20.431436
+Warning: Sample at -87.005675, 20.435972 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005675, 20.435972
+Warning: Sample at -87.011761, 20.426494 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011761, 20.426494
+Warning: Sample at -87.017472, 20.420611 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.017472, 20.420611
+Warning: Sample at -87.006103, 20.434833 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.006103, 20.434833
+Warning: Sample at -87.008181, 20.433983 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008181, 20.433983
+Warning: Sample at -87.011461, 20.426369 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011461, 20.426369
+Warning: Sample at -87.005531, 20.435322 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005531, 20.435322
+Warning: Sample at -87.004239, 20.438253 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.004239, 20.438253
+Warning: Sample at -87.006614, 20.434436 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.006614, 20.434436
+Warning: Sample at -87.011931, 20.425331 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011931, 20.425331
+Warning: Sample at -86.985625, 20.474653 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -86.985625, 20.474653
+Warning: Sample at -87.008333, 20.433333 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008333, 20.433333
+Warning: Sample at -87.013889, 20.433333 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.013889, 20.433333
+Warning: Sample at -87.008864, 20.434486 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008864, 20.434486
+Warning: Sample at -87.013508, 20.425811 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.013508, 20.425811
+Warning: Sample at -87.011817, 20.429592 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011817, 20.429592
+Warning: Sample at -87.011603, 20.430161 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011603, 20.430161
+Warning: Sample at -87.013975, 20.425853 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.013975, 20.425853
+Warning: Sample at -87.005547, 20.437239 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005547, 20.437239
+Warning: Sample at -87.008928, 20.434886 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008928, 20.434886
+Warning: Sample at -87.009764, 20.431767 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.009764, 20.431767
+Warning: Sample at -87.008075, 20.431372 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008075, 20.431372
+Warning: Sample at -87.010044, 20.428994 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.010044, 20.428994
+Warning: Sample at -87.005672, 20.436514 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005672, 20.436514
+Warning: Sample at -87.005222, 20.435244 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005222, 20.435244
+Warning: Sample at -87.008569, 20.432203 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008569, 20.432203
+Warning: Sample at -87.011217, 20.430864 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011217, 20.430864
+Warning: Sample at -87.004283, 20.436242 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.004283, 20.436242
+Warning: Sample at -87.010544, 20.429233 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.010544, 20.429233
+Warning: Sample at -87.011353, 20.430042 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011353, 20.430042
+Warning: Sample at -87.008428, 20.431503 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008428, 20.431503
+Warning: Sample at -87.010867, 20.427053 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.010867, 20.427053
+Warning: Sample at -87.005828, 20.437558 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005828, 20.437558
+Warning: Sample at -87.006261, 20.435336 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.006261, 20.435336
+Warning: Sample at -87.009711, 20.431272 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.009711, 20.431272
+Warning: Sample at -87.012814, 20.429581 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.012814, 20.429581
+Warning: Sample at -87.011369, 20.430383 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011369, 20.430383
+Warning: Sample at -87.011111, 20.427761 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011111, 20.427761
+Warning: Sample at -87.012075, 20.427553 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.012075, 20.427553
+Warning: Sample at -87.005933, 20.435994 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.005933, 20.435994
+Warning: Sample at -87.004489, 20.4368 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.004489, 20.4368
+Warning: Sample at -87.011953, 20.427736 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.011953, 20.427736
+Warning: Sample at -87.003953, 20.437881 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.003953, 20.437881
+Warning: Sample at -87.008903, 20.434097 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008903, 20.434097
+Warning: Sample at -87.013714, 20.426369 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.013714, 20.426369
+Warning: Sample at -87.008383, 20.435083 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.008383, 20.435083
+Warning: Sample at -87.025739, 20.352436 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025739, 20.352436
+Warning: Sample at -87.025453, 20.351611 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025453, 20.351611
+Warning: Sample at -87.0274, 20.353992 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.0274, 20.353992
+Warning: Sample at -87.026783, 20.363292 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026783, 20.363292
+Warning: Sample at -87.027925, 20.356381 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027925, 20.356381
+Warning: Sample at -87.027417, 20.370878 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027417, 20.370878
+Warning: Sample at -87.027025, 20.3691 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027025, 20.3691
+Warning: Sample at -87.027364, 20.365356 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027364, 20.365356
+Warning: Sample at -87.026436, 20.357075 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026436, 20.357075
+Warning: Sample at -87.0261, 20.364664 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.0261, 20.364664
+Warning: Sample at -87.027508, 20.364236 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027508, 20.364236
+Warning: Sample at -87.026739, 20.362708 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026739, 20.362708
+Warning: Sample at -87.027078, 20.355772 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027078, 20.355772
+Warning: Sample at -87.026383, 20.350256 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026383, 20.350256
+Warning: Sample at -87.022056, 20.325706 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.022056, 20.325706
+Warning: Sample at -87.0268, 20.356575 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.0268, 20.356575
+Warning: Sample at -87.025742, 20.350147 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025742, 20.350147
+Warning: Sample at -87.022292, 20.324486 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.022292, 20.324486
+Warning: Sample at -87.026917, 20.366625 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026917, 20.366625
+Warning: Sample at -87.027206, 20.367872 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027206, 20.367872
+Warning: Sample at -87.025308, 20.351358 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025308, 20.351358
+Warning: Sample at -87.027194, 20.325028 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027194, 20.325028
+Warning: Sample at -87.0285, 20.348778 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.0285, 20.348778
+Warning: Sample at -87.026881, 20.352642 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026881, 20.352642
+Warning: Sample at -87.028944, 20.373889 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.028944, 20.373889
+Warning: Sample at -87.026975, 20.370803 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026975, 20.370803
+Warning: Sample at -87.026769, 20.365242 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026769, 20.365242
+Warning: Sample at -87.024969, 20.365442 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.024969, 20.365442
+Warning: Sample at -87.027375, 20.367142 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027375, 20.367142
+Warning: Sample at -87.026403, 20.353158 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026403, 20.353158
+Warning: Sample at -87.021972, 20.325769 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.021972, 20.325769
+Warning: Sample at -87.025119, 20.324525 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025119, 20.324525
+Warning: Sample at -87.025711, 20.352139 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025711, 20.352139
+Warning: Sample at -87.027239, 20.371658 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027239, 20.371658
+Warning: Sample at -87.026919, 20.355944 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026919, 20.355944
+Warning: Sample at -87.021856, 20.32845 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.021856, 20.32845
+Warning: Sample at -87.026386, 20.358719 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026386, 20.358719
+Warning: Sample at -87.027783, 20.365272 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027783, 20.365272
+Warning: Sample at -87.027592, 20.367519 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027592, 20.367519
+Warning: Sample at -87.025731, 20.351956 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025731, 20.351956
+Warning: Sample at -87.026844, 20.371147 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026844, 20.371147
+Warning: Sample at -87.026653, 20.354353 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026653, 20.354353
+Warning: Sample at -87.027642, 20.369222 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027642, 20.369222
+Warning: Sample at -87.026183, 20.350267 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026183, 20.350267
+Warning: Sample at -87.023081, 20.328625 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.023081, 20.328625
+Warning: Sample at -87.027353, 20.355878 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027353, 20.355878
+Warning: Sample at -87.02715, 20.366856 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.02715, 20.366856
+Warning: Sample at -87.021656, 20.32705 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.021656, 20.32705
+Warning: Sample at -87.026878, 20.354081 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026878, 20.354081
+Warning: Sample at -87.023167, 20.325556 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.023167, 20.325556
+Warning: Sample at -87.025992, 20.353017 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025992, 20.353017
+Warning: Sample at -87.02465, 20.366664 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.02465, 20.366664
+Warning: Sample at -87.027217, 20.356078 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027217, 20.356078
+Warning: Sample at -87.026572, 20.353175 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026572, 20.353175
+Warning: Sample at -87.027806, 20.367897 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027806, 20.367897
+Warning: Sample at -87.027825, 20.369625 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027825, 20.369625
+Warning: Sample at -87.026686, 20.357122 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026686, 20.357122
+Warning: Sample at -87.022786, 20.327822 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.022786, 20.327822
+Warning: Sample at -87.026325, 20.365242 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026325, 20.365242
+Warning: Sample at -87.024593, 20.34004 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.024593, 20.34004
+Warning: Sample at -87.0271, 20.367278 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.0271, 20.367278
+Warning: Sample at -87.026714, 20.364694 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026714, 20.364694
+Warning: Sample at -87.027044, 20.369467 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027044, 20.369467
+Warning: Sample at -87.026869, 20.370911 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026869, 20.370911
+Warning: Sample at -87.026742, 20.354042 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026742, 20.354042
+Warning: Sample at -87.026342, 20.352647 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026342, 20.352647
+Warning: Sample at -87.027219, 20.367725 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027219, 20.367725
+Warning: Sample at -87.026817, 20.364144 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026817, 20.364144
+Warning: Sample at -87.027281, 20.371872 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027281, 20.371872
+Warning: Sample at -87.026197, 20.352397 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026197, 20.352397
+Warning: Sample at -87.028764, 20.370067 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.028764, 20.370067
+Warning: Sample at -87.02515, 20.36535 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.02515, 20.36535
+Warning: Sample at -87.026703, 20.363061 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026703, 20.363061
+Warning: Sample at -87.027303, 20.368478 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027303, 20.368478
+Warning: Sample at -87.026525, 20.354208 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026525, 20.354208
+Warning: Sample at -87.026522, 20.350003 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026522, 20.350003
+Warning: Sample at -87.026817, 20.363847 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026817, 20.363847
+Warning: Sample at -87.026269, 20.351392 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026269, 20.351392
+Warning: Sample at -87.027658, 20.364308 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027658, 20.364308
+Warning: Sample at -87.027439, 20.36965 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027439, 20.36965
+Warning: Sample at -87.025181, 20.366472 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025181, 20.366472
+Warning: Sample at -87.028725, 20.362228 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.028725, 20.362228
+Warning: Sample at -87.025336, 20.350778 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025336, 20.350778
+Warning: Sample at -87.0273, 20.36535 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.0273, 20.36535
+Warning: Sample at -87.027111, 20.363753 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027111, 20.363753
+Warning: Sample at -87.027692, 20.362406 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027692, 20.362406
+Warning: Sample at -87.027094, 20.369292 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027094, 20.369292
+Warning: Sample at -87.027631, 20.365231 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027631, 20.365231
+Warning: Sample at -87.025411, 20.351183 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025411, 20.351183
+Warning: Sample at -87.026967, 20.366125 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026967, 20.366125
+Warning: Sample at -87.024761, 20.365556 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.024761, 20.365556
+Warning: Sample at -87.027728, 20.363928 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027728, 20.363928
+Warning: Sample at -87.02275, 20.325553 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.02275, 20.325553
+Warning: Sample at -87.026583, 20.362992 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026583, 20.362992
+Warning: Sample at -87.025822, 20.366289 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.025822, 20.366289
+Warning: Sample at -87.026906, 20.366417 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026906, 20.366417
+Warning: Sample at -87.027036, 20.364492 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027036, 20.364492
+Warning: Sample at -87.028111, 20.3585 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.028111, 20.3585
+Warning: Sample at -87.027361, 20.36315 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027361, 20.36315
+Warning: Sample at -87.024544, 20.350467 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.024544, 20.350467
+Warning: Sample at -87.026717, 20.358244 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026717, 20.358244
+Warning: Sample at -87.027361, 20.356622 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027361, 20.356622
+Warning: Sample at -87.026878, 20.3629 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026878, 20.3629
+Warning: Sample at -87.027472, 20.325028 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027472, 20.325028
+Warning: Sample at -87.026492, 20.358222 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026492, 20.358222
+Warning: Sample at -87.026517, 20.362717 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026517, 20.362717
+Warning: Sample at -87.027172, 20.367244 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.027172, 20.367244
+Warning: Sample at -87.026567, 20.355489 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026567, 20.355489
+Warning: Sample at -87.026753, 20.362261 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.026753, 20.362261
+Warning: Sample at -87.379618, 20.278595 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.379618, 20.278595
+Warning: Sample at -87.376271, 20.276421 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.376271, 20.276421
+Warning: Sample at -87.379296, 20.279199 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.379296, 20.279199
+Warning: Sample at -87.380576, 20.278314 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.380576, 20.278314
+Warning: Sample at -87.380769, 20.278848 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.380769, 20.278848
+Warning: Sample at -87.379082, 20.279501 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.379082, 20.279501
+Warning: Sample at -87.452774, 19.975 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.452774, 19.975 which has no environmental data
+Warning: Sample at -87.451668, 19.966667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -87.451668, 19.966667 which has no environmental data
+Warning: Sample at -75.13951, 19.97201 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -75.13951, 19.97201
+Warning: Sample at -87.452172, 19.431037 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.452172, 19.431037
+Warning: Sample at -87.710681, 18.687655 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.710681, 18.687655
+Warning: Sample at -87.707642, 18.699632 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.707642, 18.699632
+Warning: Sample at -87.707355, 18.697737 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.707355, 18.697737
+Warning: Sample at -77.646826, 18.484405 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.646826, 18.484405
+Warning: Sample at -77.631752, 18.496367 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.631752, 18.496367
+Warning: Sample at -77.595131, 18.492701 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.595131, 18.492701
+Warning: Sample at -77.526451, 18.492867 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.526451, 18.492867
+Warning: Sample at -77.561119, 18.494984 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.561119, 18.494984
+Warning: Sample at -77.49855, 18.482733 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.49855, 18.482733
+Warning: Sample at -77.414299, 18.473101 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.414299, 18.473101
+Warning: Sample at -77.45108, 18.479218 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.45108, 18.479218
+Warning: Sample at -77.450699, 18.473995 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.450699, 18.473995
+Warning: Sample at -77.4656, 18.4785 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.4656, 18.4785
+Warning: Sample at -77.4761, 18.4764 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.4761, 18.4764
+Warning: Sample at -77.418106, 18.4745 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.418106, 18.4745
+Warning: Sample at -77.410331, 18.473339 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.410331, 18.473339
+Warning: Sample at -77.414589, 18.467469 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.414589, 18.467469
+Warning: Sample at -77.456906, 18.482986 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.456906, 18.482986
+Warning: Sample at -77.414583, 18.467469 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.414583, 18.467469
+Warning: Sample at -77.456917, 18.483 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.456917, 18.483
+Warning: Sample at -77.410333, 18.473333 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.410333, 18.473333
+Warning: Sample at -77.321266, 18.470133 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.321266, 18.470133
+Warning: Sample at -77.274734, 18.472767 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.274734, 18.472767
+Warning: Sample at -73.199997, 18.483334 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -73.199997, 18.483334
+Warning: Sample at -73.2, 18.4833 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -73.2, 18.4833
+Warning: Sample at -67.1917, 18.4627 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -67.1917, 18.4627 which has no environmental data
+Warning: Sample at -66.0498, 18.4835 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -66.0498, 18.4835
+Warning: Sample at -65.9972, 18.47 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -65.9972, 18.47
+Warning: Sample at -87.802704, 18.350794 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.802704, 18.350794
+Warning: Sample at -78.27095, 18.414249 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -78.27095, 18.414249 which has no environmental data
+Warning: Sample at -77.101433, 18.414867 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.101433, 18.414867
+Warning: Sample at -77.005486, 18.415066 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -77.005486, 18.415066
+Warning: Sample at -76.983284, 18.409767 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -76.983284, 18.409767
+Warning: Sample at -76.948853, 18.411217 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -76.948853, 18.411217
+Warning: Sample at -67.264647, 18.347706 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -67.264647, 18.347706
+Warning: Sample at -78.164169, 18.1735 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -78.164169, 18.1735
+Warning: Sample at -87.940002, 17.92 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.940002, 17.92
+Warning: Sample at -87.900002, 18.0 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.900002, 18.0
+Warning: Sample at -87.9165, 17.9559 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.9165, 17.9559
+Warning: Sample at -87.92, 17.9684 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -87.92, 17.9684
+Warning: Sample at -62.869478, 17.347669 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -62.869478, 17.347669
+Warning: Sample at -61.54841, 16.41142 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -61.54841, 16.41142
+Warning: Sample at -61.54908, 16.32105 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -61.54908, 16.32105 which has no environmental data
+Warning: Sample at -97.06705, 15.84975 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -97.06705, 15.84975
+Warning: Sample at -97.072139, 15.853475 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -97.072139, 15.853475
+Warning: Sample at -61.18901, 14.69162 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -61.18901, 14.69162
+Warning: Sample at -59.636556, 13.11975 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -59.636556, 13.11975
+Warning: Sample at -59.533333, 13.05 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -59.533333, 13.05
+Warning: Sample at -59.549999, 13.066667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -59.549999, 13.066667
+Warning: Sample at -68.308327, 12.2005 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -68.308327, 12.2005
+Warning: Sample at -68.308686, 12.199813 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -68.308686, 12.199813
+Warning: Sample at -85.709167, 10.936389 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -85.709167, 10.936389
+Warning: Sample at -83.400002, 8.716667 in Coral_Fam_Erased.csv is missing some environmental data (e.g. PAR_future45)
+Warning: Skipping sample at -83.400002, 8.716667
+Warning: Sample at -76.744408, 8.06817 in Coral_Fam_Erased.csv is missing some environmental data (e.g. SST_future45)
+Warning: Skipping sample at -76.744408, 8.06817
+Time since start: 7.512
+155167 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife outputdirectory=G:\Coral_Suitability\Maxent\Maxent_Outputs\Output3_FarFuture_RCP4.5 samplesfile=G:\Coral_Suitability\Maxent\Maxent_Inputs\CoralFamilies\Coral_Fam_Erased.csv environmentallayers=G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future nothreshold nohinge noautofeature
+Species: coral
+Layers: PAR_future45 SST_future45 currentspeed_future45 pH_future45 salinity_future45
+Layertypes: Continuous Continuous Continuous Continuous Continuous
+responsecurves: true
+jackknife: true
+outputdirectory: G:\Coral_Suitability\Maxent\Maxent_Outputs\Output3_FarFuture_RCP4.5
+samplesfile: G:\Coral_Suitability\Maxent\Maxent_Inputs\CoralFamilies\Coral_Fam_Erased.csv
+environmentallayers: G:\Coral_Suitability\Maxent\Maxent_Inputs\Maxent_Input_Variables\RCP4_5_Future
+threshold: false
+hinge: false
+autofeature: false
+
+getSamples: max memory 477626368, total allocated 257425408, free 177552168, used 79873240, increment 7009752
+Making features
+makeFeatures: max memory 477626368, total allocated 257425408, free 176072112, used 81353296, increment 1480056
+coral: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 257425408, free 176072112, used 81353296, increment 0
+linearPredictor: max memory 477626368, total allocated 257425408, free 175986944, used 81438464, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 257425408, free 175986944, used 81438464, increment 0
+Sequential: max memory 477626368, total allocated 257425408, free 175986944, used 81438464, increment 0
+Initial loss: 9.27275163209758
+160: time = 0.156000 loss = 8.994075
+Resulting gain: 0.27867687945602526
+Projecting...
+Writing file G:\Coral_Suitability\Maxent\Maxent_Outputs\Output3_FarFuture_RCP4.5\coral.asc
+Writing G:\Coral_Suitability\Maxent\Maxent_Outputs\Output3_FarFuture_RCP4.5\plots\coral.png
+Time since start: 8.62
+coral response curves
+Response curve: only PAR_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 254279680, free 166769112, used 87510568, increment 6072104
+coral PAR_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 254279680, free 166683944, used 87595736, increment 85168
+linearPredictor: max memory 477626368, total allocated 254279680, free 166598776, used 87680904, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 254279680, free 166598776, used 87680904, increment 0
+Sequential: max memory 477626368, total allocated 254279680, free 166598776, used 87680904, increment 0
+Initial loss: 9.27275163209758
+100: time = 0.172000 loss = 9.256669
+Resulting gain: 0.016082955011889055
+coral response curves
+Response curve: only SST_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 254279680, free 161006288, used 93273392, increment 5592488
+coral SST_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 254279680, free 160970304, used 93309376, increment 35984
+linearPredictor: max memory 477626368, total allocated 254279680, free 160970304, used 93309376, increment 0
+FeaturedSpace: max memory 477626368, total allocated 254279680, free 160970304, used 93309376, increment 0
+Sequential: max memory 477626368, total allocated 254279680, free 160970304, used 93309376, increment 0
+Initial loss: 9.27275163209758
+60: time = 0.109000 loss = 9.221736
+Resulting gain: 0.051015361308161644
+coral response curves
+Response curve: only currentspeed_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 254279680, free 157103488, used 97176192, increment 3866816
+coral currentspeed_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 254279680, free 157103488, used 97176192, increment 0
+linearPredictor: max memory 477626368, total allocated 254279680, free 157103488, used 97176192, increment 0
+FeaturedSpace: max memory 477626368, total allocated 254279680, free 157103488, used 97176192, increment 0
+Sequential: max memory 477626368, total allocated 254279680, free 157103488, used 97176192, increment 0
+Initial loss: 9.27275163209758
+100: time = 0.094000 loss = 9.181612
+Resulting gain: 0.09113915130498462
+coral response curves
+Response curve: only pH_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 254279680, free 151293992, used 102985688, increment 5809496
+coral pH_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 254279680, free 151258000, used 103021680, increment 35992
+linearPredictor: max memory 477626368, total allocated 254279680, free 151258000, used 103021680, increment 0
+FeaturedSpace: max memory 477626368, total allocated 254279680, free 151258000, used 103021680, increment 0
+Sequential: max memory 477626368, total allocated 254279680, free 151258000, used 103021680, increment 0
+Initial loss: 9.27275163209758
+Time since start: 9.665
+60: time = 0.140000 loss = 9.245190
+Resulting gain: 0.027561237068859157
+coral response curves
+Response curve: only salinity_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 254279680, free 147391528, used 106888152, increment 3866472
+coral salinity_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 254279680, free 147391528, used 106888152, increment 0
+linearPredictor: max memory 477626368, total allocated 254279680, free 147391528, used 106888152, increment 0
+FeaturedSpace: max memory 477626368, total allocated 254279680, free 147391528, used 106888152, increment 0
+Sequential: max memory 477626368, total allocated 254279680, free 146138400, used 108141280, increment 1253128
+Initial loss: 9.27275163209758
+100: time = 0.125000 loss = 9.250200
+Resulting gain: 0.022551194081113834
+coral response curves
+Jackknife: leave PAR_future45 out
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 185097576, used 61842072, increment -46299208
+coral PAR_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 185012408, used 61927240, increment 85168
+linearPredictor: max memory 477626368, total allocated 246939648, free 184927240, used 62012408, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 184927240, used 62012408, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 184927240, used 62012408, increment 0
+Initial loss: 9.27275163209758
+140: time = 0.141000 loss = 8.994544
+Jackknife: leave SST_future45 out
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 182055528, used 64884120, increment 2871712
+coral SST_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 181970360, used 64969288, increment 85168
+linearPredictor: max memory 477626368, total allocated 246939648, free 181885192, used 65054456, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 181885192, used 65054456, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 181885192, used 65054456, increment 0
+Initial loss: 9.27275163209758
+220: time = 0.188000 loss = 9.079393
+Jackknife: leave currentspeed_future45 out
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 178301128, used 68638520, increment 3584064
+coral currentspeed_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 178215960, used 68723688, increment 85168
+linearPredictor: max memory 477626368, total allocated 246939648, free 178130792, used 68808856, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 178130792, used 68808856, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 178130792, used 68808856, increment 0
+Initial loss: 9.27275163209758
+120: time = 0.156000 loss = 9.066420
+Jackknife: leave pH_future45 out
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 175571064, used 71368584, increment 2559728
+coral pH_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 175485896, used 71453752, increment 85168
+linearPredictor: max memory 477626368, total allocated 246939648, free 175400728, used 71538920, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 175400728, used 71538920, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 175400728, used 71538920, increment 0
+Initial loss: 9.27275163209758
+Time since start: 10.695
+120: time = 0.110000 loss = 8.994637
+Jackknife: leave salinity_future45 out
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 172876312, used 74063336, increment 2524416
+coral salinity_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 172791144, used 74148504, increment 85168
+linearPredictor: max memory 477626368, total allocated 246939648, free 172705976, used 74233672, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 172705976, used 74233672, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 172705976, used 74233672, increment 0
+Initial loss: 9.27275163209758
+280: time = 0.218000 loss = 9.152663
+Jackknife: only PAR_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 168881840, used 78057808, increment 3824136
+coral PAR_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 168881840, used 78057808, increment 0
+linearPredictor: max memory 477626368, total allocated 246939648, free 168881840, used 78057808, increment 0
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 168881840, used 78057808, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 168881840, used 78057808, increment 0
+Initial loss: 9.27275163209758
+100: time = 0.171000 loss = 9.256669
+Res.gain: 0.016082955011889055
+Jackknife: only SST_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 168299816, used 78639832, increment 582024
+coral SST_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 168299816, used 78639832, increment 0
+linearPredictor: max memory 477626368, total allocated 246939648, free 166986976, used 79952672, increment 1312840
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 166986976, used 79952672, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 166986976, used 79952672, increment 0
+Initial loss: 9.27275163209758
+60: time = 0.094000 loss = 9.221736
+Res.gain: 0.051015361308161644
+Jackknife: only currentspeed_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 166628912, used 80310736, increment 358064
+coral currentspeed_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 166584160, used 80355488, increment 44752
+linearPredictor: max memory 477626368, total allocated 246939648, free 166584160, used 80355488, increment 0
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 166584160, used 80355488, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 166584160, used 80355488, increment 0
+Initial loss: 9.27275163209758
+100: time = 0.078000 loss = 9.181612
+Res.gain: 0.09113915130498462
+Jackknife: only pH_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 165777200, used 81162448, increment 806960
+coral pH_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 165777200, used 81162448, increment 0
+linearPredictor: max memory 477626368, total allocated 246939648, free 165777200, used 81162448, increment 0
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 165777200, used 81162448, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 165777200, used 81162448, increment 0
+Initial loss: 9.27275163209758
+60: time = 0.140000 loss = 9.245190
+Res.gain: 0.027561237068859157
+Jackknife: only salinity_future45
+Making features
+makeFeatures: max memory 477626368, total allocated 246939648, free 165418768, used 81520880, increment 358432
+coral salinity_future45: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+687 samples
+Density: max memory 477626368, total allocated 246939648, free 165288872, used 81650776, increment 129896
+linearPredictor: max memory 477626368, total allocated 246939648, free 165203704, used 81735944, increment 85168
+FeaturedSpace: max memory 477626368, total allocated 246939648, free 165203704, used 81735944, increment 0
+Sequential: max memory 477626368, total allocated 246939648, free 165203704, used 81735944, increment 0
+Initial loss: 9.27275163209758
+100: time = 0.125000 loss = 9.250200
+Res.gain: 0.022551194081113834
+Time since start: 11.709
+Ending
