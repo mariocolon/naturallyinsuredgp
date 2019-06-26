@@ -1,0 +1,61 @@
+Metadata,
+,
+Description:,"This data set is composed of hotel records for 5 different cities in Southeast Florida. The data includes identifiers for each hotel, records of hotel amenities, locational data and the amount of coral cover within a 10 km buffer of the hotel. This data was compiled for statistical analysis to determine how each of the variables contributes to the hotel price. "
+,
+,
+,
+,
+Sources:,
+Coral data: ,Coral and Hardbottom Habitats in Florida. Florida Fish and Wildlife Conservation Commission. http://geodata.myfwc.com/datasets/coral-and-hard-bottom-habitats-in-florida
+Hotel Data: ,Tripadvisor.com
+Other Lodging Facilities:,Florida Geoplan Center. Lodging Facilities in Florida - 2016 (FGDC)
+Dive sites:,FIND SOURCE
+,
+,
+Variables:,
+FID,Unique identifier for each hotel
+Hotel_Name,Name of the hotel gathered from tripadvisor or the Florida geoplan center 
+Address,Street address of the hotel
+City_State,City and state the hotel is located in
+Full_Address,The full address of the hotel
+Rating,Hotel guest rating on a scale of 1-5
+Num_Rooms,Number of reviews of the hotel
+Pool,"Binary variable of whether the hotel has a pool, 1 = Yes, 0 = No"
+Bar,"Binary variable of whether hotel has a bar, 1 = Yes, 0 = No"
+Biz_Center,"Binary variable of whether the hotel has a business center, 1 = Yes, 0 = No"
+Conference,"Binary variable for whether hotel has a conference center, 1 = Yes, 0 = No"
+Mtg_Rooms,"Binary variable for whether hotel offers meeting rooms, 1 = Yes, 0 = No"
+Wheelchair,"Binary variable for whether hotel has wheelchair access, 1 = Yes, 0 = No"
+Concierge,"Binary variable for whether the hotel has a concierge, 1 = Yes, 0 = No"
+Laundry,"Binary variable for whether the hotel offers laundry service, 1 = Yes, 0 = No"
+Gym,"Binary variable for whether the hotel has a gym, 1 = Yes, 0 = No"
+Wifi,"Binary variable for whether the hotel has free wifi, 1 = Yes, 0 = No"
+Multilingual,"Binary variable for whether the hotel has multilingual staff, 1 = Yes, 0 = No"
+No_Smoke,"Binary variable for whether the hotel is non-smoking, 1 = Yes, 0 = No"
+Breakfast_,"Binary variable for whether the hotel offers free breakfast, 1 = Yes, 0 = No"
+Air_Trans,"Binary variable for whether the hotel offers transport to the airport, 1 = Yes, 0 = No"
+Free_Parking,"Binary variable for whether the hotel has free parking, 1 = Yes, 0 = No"
+Beachfront,"Binary variable for whether the hotel is on the beachfront, 1 = Yes, 0 = No"
+Low_Price,Low price for a standard 2-person room per night for the year
+High_Price,High price for a standard 2-person room per night for the year
+LATITUDE,Latitude of the hotel
+LONGITUDE,Longitude of the hotel
+NEAR_DIST_BEACH,Distance from the hotel to the nearest beach
+NEAR_DIST_SHORE,Distance from the hotel to the waterline of the nearest beach
+BEACH_WIDTH,Width of beach in front of the hotel. Calculated by subtracting NEAR_DIST_BEACH from NEAR_DIST_SHORE
+DIST_TO_ACCESS_POINTS,"Distance to the nearest beach access point, as some hotels do not have direct beach access"
+DIST_TO_AIRPORT,Distance to the nearest airport
+DIST_TO_DIVE,Distance to the nearest dive site
+DIST_TO_REEF,Distance to the nearest coral reef
+NUM_DIVE,The total number of dive sites within the 10km buffer
+CORAL_COVER,Area of coral cover within the 10km buffer of the hotel
+City,"City the hotel is in out of the following list: Boca Raton, Fort Lauderdale, Delray Beach, Miami Beach, Key West"
+city_comp,"Neighborhood of the city the hotel is in out of the following list: Boca Raton, Fort Lauderdale, Delray Beach, Miami Beach, South Beach, Key West"
+dive_site,"Binary variable for whether there is a dive site within the 10km buffer of the hotel, 1 = Yes, 0 = No"
+class,Hotel class on a 1-5 star scale
+number_rooms,The number of rooms in the hotel
+3_star,"Binary variable for whether the hotel has a 3-star hotel class, 1 = Yes, 0 = No"
+4_star,"Binary variable for whether the hotel has a 4-star hotel class, 1 = Yes, 0 = No"
+5_star,"Binary variable for whether the hotel has a 5-star hotel class, 1 = Yes, 0 = No"
+,
+Missing values are denoted with #N/A,
